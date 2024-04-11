@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humble Hyperlink</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Humble Hyperlink</h1>
+    <nav>
+      <ul>
+        <li><a href="#section1">Concept</a></li>
+        <li><a href="#section2">History</a></li>
+        <li><a href="#section3">Biography</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <section id="section1">
+        <h2>Concept of Hyperlinks</h2>
+        <div id="hyperlink-content">
+          <p>
+            Hyperlinks are a fundamental feature of the web, enabling users to
+            navigate between different resources by clicking on links.
+          </p>
+          <p>
+            Hyperlinks are implemented using the <code>&lt;a&gt;</code> tag in
+            HTML, which defines a hyperlink. When a user clicks on a hyperlink,
+            the browser sends a request to the server specified in the
+            hyperlink's <code>href</code> attribute and retrieves the linked
+            resource.
+          </p>
+          <p>For example, the following code creates a hyperlink to Google:</p>
+          <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
+          <p>
+            When a user clicks on the link, the browser sends a request to
+            <a href="https://www.google.com">https://www.google.com</a> and
+            displays the Google homepage.
+          </p>
+
+          <h3>Interactive Example</h3>
+          <button id="load-data">Load Data from Public API</button>
+          <div id="data-container"></div>
+        </div>
+      </section>
+
+      <section id="section2" style="display: none">
+        <h2>History of Hyperlinks</h2>
+        <div id="history-content">
+          <p>
+            The concept of hyperlinks predates the web itself, with early
+            hypertext systems proposing the idea of non-linear linking of
+            documents. However, it was Tim Berners-Lee's implementation of the
+            World Wide Web in the early 1990s that popularized hyperlinks and
+            revolutionized the way we access and share information.
+          </p>
+          <p>
+            Key technologies and applications include the
+            <a href="https://en.wikipedia.org/wiki/Project_Xanadu"
+              >Project Xanadu</a
+            >
+            hypertext system and the development of search engines, which used
+            hyperlinks to rank the relevance of web pages based on their
+            incoming links.
+          </p>
+        </div>
+      </section>
+
+      <section id="section3" style="display: none">
+        <h2>Biography</h2>
+        <div id="bio-content">
+          <p>Brief biography of the author...</p>
+          <img src="author.jpg" alt="Author's Picture" />
+          <p>Name: John Doe</p>
+          <p>Education: Bachelor's in Computer Science</p>
+          <p>Experience: 5 years in web development</p>
+          <p>Interests: Web technologies, programming, hiking</p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+table {
+  margin: 30px auto;
+  width: 70%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 3px 0;
+}
+.rank {
+  background-color: azure;
+}
+
+.country {
+  background-color: azure;
+}
+
+.country2 {
+  text-align: left;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.bronze {
+  background-color: #cd7f32;
+}
+
+td:hover {
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  padding: 2px 0;
+}
+
+tr:hover {
+  background-color: #ccc;
+}

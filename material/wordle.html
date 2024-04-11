@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <style>
+      .result0 {
+        color: #000;
+      } /* Not in the word */
+      .result1 {
+        color: #ffc107;
+      } /* In the word, but in a different place */
+      .result2 {
+        color: #28a745;
+      } /* In the word and in the right place */
+    </style>
+  </head>
+  <body>
+    <h1>Wordle</h1>
+    <p>Guess the 5-letter word:</p>
+    <input type="text" id="guessInput" />
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
+
+    <script>
+      const secretWord = "CRAZE"; // Secret word for the game
+      let remainingAttempts = 6; // Number of remaining attempts
+
+      function wordle(target, guess) {
+        if (target.length !== 5 || guess.length !== 5) {
+          return null; // Invalid input, return null
+        }
+
+        let result = [0, 0, 0, 0, 0];
+
+        for (let i = 0; i < 5; i++) {
+          if (target[i] === guess[i]) {
+            result[i] = 2; // Letter in the right place
+          } else if (target.includes(guess[i])) {
+            result[i] = 1; // Letter in the word, but in a different place
+          }
+        }
+
+        return result;
+      }
+
+      function checkGuess() {
+        const guess = document.getElementById("guessInput").value.toUpperCase();
+        if (guess.length !== 5 || !/^[A-Z]+$/.test(guess)) {
+          alert("Please enter a 5-letter word using only letters A-Z.");
+          return;
+        }
+
+        const feedback = wordle(secretWord, guess);
+        if (!feedback) {
+          alert("Please enter a 5-letter word using only letters A-Z.");
+          return;
+        }
+
+        remainingAttempts--;
+        if (remainingAttempts === 0 || feedback.every((val) => val === 2)) {
+          document.getElementById(
+            "result"
+          ).innerText = `Game over! The word was ${secretWord}.`;
+          return;
+        }
+
+        const coloredFeedback = feedback
+          .map((val) => {
+            switch (val) {
+              case 0:
+                return '<span class="result0">0</span>';
+              case 1:
+                return '<span class="result1">1</span>';
+              case 2:
+                return '<span class="result2">2</span>';
+            }
+          })
+          .join(" ");
+
+        document.getElementById(
+          "result"
+        ).innerHTML += `${guess}: ${coloredFeedback}<br>`;
+        document.getElementById("guessInput").value = "";
+      }
+    </script>
+  </body>
+</html>
