@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var fact = data.text;
 
         var html = `
-                  <h4>Random Cat Fact</h4>
-                  <p>${fact}</p>
-              `;
+                    <h4>Random Cat Fact</h4>
+                    <p>${fact}</p>
+                `;
         dataContainer.innerHTML = html;
       } else {
         dataContainer.innerHTML = "Failed to load data. Please try again.";
@@ -49,5 +49,21 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     xhr.send();
+  });
+});
+
+const historyYears = document.querySelectorAll(".history-year");
+const historyContents = document.querySelectorAll(".history-content");
+
+historyYears.forEach((year) => {
+  year.addEventListener("click", () => {
+    const targetId = year.getAttribute("data-target");
+    historyContents.forEach((content) => {
+      if (content.id === targetId) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    });
   });
 });

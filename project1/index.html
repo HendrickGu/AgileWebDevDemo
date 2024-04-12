@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <h1>Humble Hyperlink</h1>
+    <h1>Research On Hyperlinks</h1>
     <nav>
       <ul>
         <li><a href="#section1">Concept</a></li>
@@ -21,6 +21,7 @@
       <section id="section1">
         <h2>Concept of Hyperlinks</h2>
         <div id="hyperlink-content">
+          <h3>Definition</h3>
           <p>
             Hyperlinks are a fundamental feature of the web, enabling users to
             navigate between different resources by clicking on links.
@@ -32,6 +33,24 @@
             hyperlink's <code>href</code> attribute and retrieves the linked
             resource.
           </p>
+          <h4>From a Web Developer's Perspective:</h4>
+          <div style="display: flex; align-items: center;">
+            <p>
+              Hyperlinks are created using the <code>&lt;a&gt;</code> tag in HTML. Developers specify the target resource's URL in the <code>href</code> attribute to define the hyperlink's target. For example, <code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code>
+            </p>
+            <img src="https://iprmentlaw.com/wp-content/uploads/2020/08/click-here-300x225.jpg" alt="Click here image" />
+          </div>
+          
+          </p>
+          <a href="https://www.example.com">Click here</a>
+
+          <p>When a user clicks on a hyperlink, the browser sends an HTTP request to the target URL. This request includes necessary information such as the request type, headers, etc., and the browser waits for the server's response.</p>
+          
+          <h4>From a Browser's Perspective:</h4>
+          <p>When parsing an HTML document, the browser encounters an <code>&lt;a&gt;</code> tag and creates a clickable hyperlink based on the <code>href</code> attribute's value. When a user clicks on this hyperlink, the browser sends an HTTP request to the target URL specified in the <code>href</code> attribute. This request includes metadata like the Referer header, indicating the request's origin page.</p>
+          <p>After receiving the server's response, the browser processes it accordingly. If the response is an HTML page, the browser parses and renders the page. If the response is a file like an image or video, the browser handles it appropriately.</p>
+          <p>If the response is an HTML page that contains other hyperlinks, the browser repeats the above steps to load and render other parts of the page until the page is fully loaded.</p>
+
           <p>For example, the following code creates a hyperlink to Google:</p>
           <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
           <p>
@@ -40,32 +59,288 @@
             displays the Google homepage.
           </p>
 
-          <h3>Interactive Example</h3>
+          <h3>Types of Links<sup><a href="#ref1">[1]</a></sup></h3>
+          <h4>Inline Links</h4>
+          <p>
+            Inline links display remote content without embedding it, allowing
+            users to access it directly or by following the link. They can show
+            modified versions of the content, such as thumbnails or previews,
+            instead of the full content. This approach reduces file sizes and
+            improves response times, especially when the full content is not
+            immediately needed.
+          </p>
+          <p>
+            Example: <a href="https://www.example.com">Click here</a> to visit
+            Example.com.
+          </p>
+
+          <h4>Anchor Links</h4>
+          <p>
+            Anchor links, also known as fragment links, are used to link to a
+            specific part of a document. 
+            <p>Example: <a href="#top">Back to Top</a></p>This can be a portion of text, a
+            heading, or even a hot area in an image. Anchors are marked with
+            identifiers, and a link to an anchor is called an anchor link. For
+            example, in HTML, you can create an anchor like this:
+            <code>&lt;a id="name"&gt;&lt;/a&gt;</code>. To link to this anchor,
+            you would use
+            <code>&lt;a href="#name"&gt;Link Text&lt;/a&gt;</code>.
+          </p>
+          
+          <ul>
+            <li>
+              <strong>Text hyperlink:</strong> Embedded into a word or a phrase.
+            </li>
+            <li><strong>Image hyperlink:</strong> Embedded into an image.</li>
+            <li>
+              <strong>Bookmark hyperlink:</strong> Takes visitors to another
+              part of a web page.
+            </li>
+            <li>
+              <strong>E-mail hyperlink:</strong> Allows visitors to send an
+              e-mail message.
+            </li>
+          </ul>
+
+          <h4>Fat Links</h4>
+          <p>
+            Fat links are hyperlinks that contain additional information or
+            metadata. They are often used in semantic web applications to
+            provide context and meaning to the linked resource.
+          </p>
+          <p>
+            Example:
+            <a href="https://www.example.com" title="Visit Example.com"
+              >Example.com</a
+            >
+          </p>
+
+          <h3>Why Hyperlinks Are Important</h3>
+          <p>
+            All the above mentioned links, complemented by quality content, are
+            important in improving a website’s SEO<sup><a href="#ref2">[2]</a></sup>, particularly when they’re
+            done organically or naturally.
+          </p>
+
+          <p>
+            To rank in search engines like Google, a website should be properly
+            built using relevant SEO techniques. Another factor is that it
+            should come across as trustworthy and as an authoritative source.
+          </p>
+
+          <p>
+            This can be achieved through link building or the process of having
+            other websites link back to your website, which gives you a
+            backlink. As previously mentioned, a site’s backlink profile is an
+            essential ranking factor for Google, along with relevant and quality
+            content.
+          </p>
+
+          <p>
+            Hyperlinks are advantageous if used correctly. If implemented
+            otherwise, they can potentially hurt a website’s rankings.
+          </p>
+
+          <p>
+            When dealing with hyperlinks, it’s important to avoid artificial
+            inbound links from spammy websites, as these can affect a website’s
+            scores<sup><a href="#ref3">[3]</a></sup>. Additionally, external links to your content should point to
+            high-quality and relevant sites to benefit both you and your
+            readers. The number of links also plays a part in rankings. Having
+            too many outbound links can put a website at risk of looking spammy.
+          </p>
+
+          <p>
+            Aside from improving SEO, links can increase a website’s traffic and
+            credibility<sup><a href="#ref4">[4]</a></sup>. This helps in building connections within a particular
+            web community, which then paves the way for link building. Links are
+            also useful when used in conjunction with calls to action, as these
+            can increase conversion rates.
+          </p>
+          <iframe
+            width="100%"
+            height="435"
+            src="https://www.youtube.com/embed/Yqwm3RFicQ8"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <h3>AJAX (Asynchronous JavaScript and XML)<sup><a href="#ref5">[5]</a></sup></h3>
+          <p>
+            AJAX is a technique used in web development to create interactive
+            web applications. It allows web pages to be updated asynchronously
+            by exchanging small amounts of data with the server behind the
+            scenes. This means that web pages can update without reloading the
+            entire page.
+          </p>
+
+          <p>hyperlinks are used for navigation between different resources, AJAX is used to enhance the interactivity and responsiveness of web applications by allowing them to update content asynchronously.</p>
+
+          <h4>Interactive Example</h4>
           <button id="load-data">Load Data from Public API</button>
           <div id="data-container"></div>
         </div>
+
+      
+        <h3>References</h3>
+        <ol>
+          <li id="ref1">
+            <a href="https://en.wikipedia.org/wiki/Hyperlink#cite_note-4"
+              >Definition of Hyperlinks - Wikipedia</a
+            > . 27 March 2024
+          </li>
+          
+          </li>
+          <li id="ref2">
+            <a
+              href="https://web.archive.org/web/20130704143743/http://people.duke.edu/~mshumate/fiction/htt/tools.html#fatlink"
+              >HTML, Web Browsers, and Other Paraphernalia</a
+            >
+            . Archived from the original on July 4, 2013.
+          </li>
+          <li id="ref3">
+            <a
+              href="https://www.w3.org/Provider/Server"
+              >Making a Server ("HREF" is for "hypertext reference")</a
+            >
+            . W3C. Archived from the original on 2012-10-25. Retrieved 2012-10-25.
+          </li>
+          <li id="ref4">
+            <a
+              href="https://www.cnet.com/news/hyperlink-patent-case-fails-to-click/"
+              >CNET News.com, Hyperlink patent case fails to click</a
+            >
+            . August 23, 2002.
+          </li>
+          <li id="ref5">
+            <a
+              href="https://en.wikipedia.org/wiki/AJAX_(programming)#cite_note-:0-1"
+              >AJAX (programming) - Wikipedia</a
+            > . 16 March 2024
+        </ol>
       </section>
 
       <section id="section2" style="display: none">
         <h2>History of Hyperlinks</h2>
-        <div id="history-content">
-          <p>
-            The concept of hyperlinks predates the web itself, with early
-            hypertext systems proposing the idea of non-linear linking of
-            documents. However, it was Tim Berners-Lee's implementation of the
-            World Wide Web in the early 1990s that popularized hyperlinks and
-            revolutionized the way we access and share information.
+        <p>Please click on the following years to obtain different information for each year</p>
+        <nav id="nav2">
+          <ul>
+              <li><button class="history-year" data-target="year-1945">1945</button></li>
+              <li><button class="history-year" data-target="year-1960s">1960s</button></li>
+              <li><button class="history-year" data-target="year-1970s">1970s</button></li>
+              <li><button class="history-year" data-target="year-1980s">1980s</button></li>
+              <li><button class="history-year" data-target="year-1989">1989</button></li>
+              <li><button class="history-year" data-target="year-1990">1990</button></li>
+              <li><button class="history-year" data-target="year-1991">1991</button></li>
+              <li><button class="history-year" data-target="year-1993">1993</button></li>
+              <li><button class="history-year" data-target="year-1994">1994</button></li>
+              <li><button class="history-year" data-target="year-late-1990s">Late 1990s</button></li>
+              <li><button class="history-year" data-target="year-2000s">2000s</button></li>
+              <li><button class="history-year" data-target="year-2010s">2010s</button></li>
+              <li><button class="history-year" data-target="year-present">Present</button></li>
+          </ul>
+      </nav>
+      <div class="container">
+        <section id="year-1945" class="history-content">
+          <p>1945: Vannevar Bush proposed the concept of a hypothetical machine called the "memex" in his influential essay "<a
+            href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
+            >As We May Think</a
+          ><sup><a href="#ref6">[1]</a></sup>," published in The Atlantic Monthly. The memex, short for "memory extender," was envisioned as a mechanical device that would augment human memory and facilitate the organization and retrieval of information.</p><p>
+            <img id="memex-image" src="https://cdn.theatlantic.com/thumbor/bZX1oW71zQgJwzuSKMaGQSW7_w8=/1x416:2999x2102/976x549/media/img/2018/03/AP_413517775098/original.jpg" alt="Vannevar Bush's Memex Concept Image">
+            <span id="memex-caption">The telegram was a breakthrough in communication technology, which Vannevar Bush imagined could evolve in unprecedented ways. (Associated Press)</span>
           </p>
-          <p>
-            Key technologies and applications include the
-            <a href="https://en.wikipedia.org/wiki/Project_Xanadu"
-              >Project Xanadu</a
+
+
+          <p>Bush's idea was groundbreaking for its time, as it predated the development of modern computers and the internet. The memex was conceived as a desk-like device with screens for reading microfilm, buttons for navigation, and a keyboard for entering annotations. Users would be able to create, store, and access a personal library of documents and information, similar to the way we use computers today.</p>
+          <p>One of the key features of the memex was its ability to create links, or "associative trails," between different documents. These links would allow users to navigate between related pieces of information, forming a non-linear network of knowledge. This concept foreshadowed the hypertext and hyperlinks that would later become central to the World Wide Web.</p>
+      </section>
+      
+      <section id="year-1960s" class="history-content">
+          <p>1960s: Ted Nelson made significant contributions to the field of computing by introducing the terms "hypertext" and "hyperlink." He envisioned a revolutionary concept of non-sequential writing, where information could be interconnected in a web-like structure. This groundbreaking idea laid the foundation for modern hypertext systems and the World Wide Web.</p>
+          <p>Nelson's vision culminated in the proposal of the <a href="https://www.xanadu.net/">Xanadu project</a>, an ambitious endeavor aimed at creating a global hypertext system<sup><a href="#ref7">[2]</a></sup>. The Xanadu project sought to enable users to access and navigate a vast network of interconnected documents, allowing for seamless information retrieval and sharing.</p>
+          <p>Although the Xanadu project faced numerous challenges and was never fully realized in its original form, Nelson's ideas and contributions were instrumental in shaping the development of hypertext and hypermedia systems. His work laid the groundwork for future innovations in information technology and inspired generations of researchers and developers to explore the possibilities of interconnected digital information.</p>
+      </section>
+      
+      <section id="year-1970s" class="history-content">
+          <p>1970s: The Hypertext Editing System (HES) is developed by Andries van Dam and his colleagues at Brown University.</p>
+          <p>HES allows users to create and edit hypertext documents, laying the foundation for future hypertext systems.</p>
+      </section>
+      
+      <section id="year-1980s" class="history-content">
+          <p>1980s: Tim Berners-Lee works at CERN and develops ENQUIRE, a system for storing and sharing information. This project later inspires the creation of the World Wide Web.</p>
+      </section>
+      
+      <section id="year-1989" class="history-content">
+          <p>1989: Tim Berners-Lee writes a proposal for the World Wide Web, outlining the basic concepts of hypertext and the HTTP protocol. He also creates the first web browser and web server.</p>
+      </section>
+      
+      <section id="year-1990" class="history-content">
+          <p>1990: The first web page is created by Tim Berners-Lee, providing an introduction to the World Wide Web and instructions on how to create web pages.</p>
+      </section>
+      
+      <section id="year-1991" class="history-content">
+          <p>1991: The first website goes live at CERN, providing information about the World Wide Web project and how to use it.</p>
+      </section>
+      
+      <section id="year-1993" class="history-content">
+          <p>1993: The Mosaic web browser is released, making the World Wide Web accessible to a wider audience. Mosaic introduces features such as inline images and the ability to display text and images on the same page.</p>
+      </section>
+      
+      <section id="year-1994" class="history-content">
+          <p>1994: The World Wide Web Consortium (W3C) is founded by Tim Berners-Lee to standardize web technologies and ensure their interoperability.</p>
+      </section>
+      
+      <section id="year-late-1990s" class="history-content">
+          <p>Late 1990s: The dot-com boom sees a rapid increase in the number of websites and internet users, leading to the popularization of hyperlinks as a means of navigating the web.</p>
+      </section>
+      
+      <section id="year-2000s" class="history-content">
+          <p>2000s: Web 2.0 emerges, bringing a new wave of interactive and collaborative web applications. Social media platforms like Facebook and Twitter use hyperlinks extensively to connect users and share information.</p>
+      </section>
+      
+      <section id="year-2010s" class="history-content">
+          <p>2010s: The rise of mobile internet and smartphones leads to a shift towards mobile-friendly web design, with hyperlinks remaining a crucial element of navigation on mobile devices.</p>
+      </section>
+      
+      <section id="year-present" class="history-content">
+          <p>Present: Hyperlinks continue to be a fundamental feature of the web, enabling users to navigate between different resources and access information quickly and efficiently. Advances in web technologies have led to the development of new types of hyperlinks, such as deep links and app links, further enhancing the user experience.</p>
+      </section>
+
+      <h3>References</h3>
+        <ol>
+          <li id="ref6">
+            Barnet, Belinda (2013). Memory Machines: The Evolution of Hypertext. Anthem Press. ISBN 9780857281968.
+          </li>
+          
+          </li>
+          <li id="ref7">
+            <a
+              href="https://www.cambridge.org/core/books/abs/memory-machines/magical-place-of-literary-memory-xanadu/EF94C6EA2C3B9B7FB7B5002F220D2CCA"
+              >The Magical Place of Literary Memory: Xanadu</a
             >
-            hypertext system and the development of search engines, which used
-            hyperlinks to rank the relevance of web pages based on their
-            incoming links.
-          </p>
-        </div>
+            . Archived October 9, 2004, at archive.today in Screening the Past Archived January 16, 2013, at the Wayback Machine, July 2005 by Belinda Barnet
+          </li>
+          <li id="ref8">
+            <a
+              href="https://www.w3.org/Provider/Server"
+              >Making a Server ("HREF" is for "hypertext reference")</a
+            >
+            . W3C. Archived from the original on 2012-10-25. Retrieved 2012-10-25.
+          </li>
+          <li id="ref9">
+            <a
+              href="https://www.cnet.com/news/hyperlink-patent-case-fails-to-click/"
+              >CNET News.com, Hyperlink patent case fails to click</a
+            >
+            . August 23, 2002.
+          </li>
+          <li id="ref10">
+            <a
+              href="https://en.wikipedia.org/wiki/AJAX_(programming)#cite_note-:0-1"
+              >AJAX (programming) - Wikipedia</a
+            > . 16 March 2024
+        </ol>
+      
+    </div>
       </section>
 
       <section id="section3" style="display: none">
