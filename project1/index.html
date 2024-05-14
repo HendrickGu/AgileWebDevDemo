@@ -19,7 +19,9 @@
     </nav>
     <div class="container">
       <section id="section1">
+        <!--  Section1 -->
         <h2>Concept of Hyperlinks</h2>
+        <!-- Concept of Hyperlinks Section -->
         <div id="hyperlink-content">
           <h3>Definition</h3>
           <p>
@@ -34,22 +36,83 @@
             resource.
           </p>
           <h4>From a Web Developer's Perspective:</h4>
-          <div style="display: flex; align-items: center;">
+          <div>
             <p>
-              Hyperlinks are created using the <code>&lt;a&gt;</code> tag in HTML. Developers specify the target resource's URL in the <code>href</code> attribute to define the hyperlink's target. For example, <code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code>
+              Hyperlinks are created using the <code>&lt;a&gt;</code> tag in
+              HTML. Developers specify the target resource's URL in the
+              <code>href</code> attribute to define the hyperlink's target.
             </p>
-            <img src="https://iprmentlaw.com/wp-content/uploads/2020/08/click-here-300x225.jpg" alt="Click here image" />
-          </div>
-          
-          </p>
-          <a href="https://www.example.com">Click here</a>
 
-          <p>When a user clicks on a hyperlink, the browser sends an HTTP request to the target URL. This request includes necessary information such as the request type, headers, etc., and the browser waits for the server's response.</p>
-          
+            <p>
+              <!-- Anchor text -->
+              Anchor elements have four components:
+            </p>
+
+            <ol>
+              <!-- List items -->
+              <li>
+                <strong>An opening tag:</strong> This is the start of the anchor
+                element and signifies the beginning of the link element
+              </li>
+              <li>
+                <strong>Tag attributes + attribute values:</strong> Within the
+                opening tag, you can include different attributes. Attributes
+                provide extra information, like how the link should behave or
+                where it should take users.
+              </li>
+
+              <li>
+                <strong>Anchor text or other content:</strong> This is the
+                content users click<img
+                  src="https://iprmentlaw.com/wp-content/uploads/2020/08/click-here-300x225.jpg"
+                  alt="Click here image"
+                  id="clickhere"
+                />
+              </li>
+              <li>
+                <strong>A closing tag:</strong> This signifies the end of the
+                link element
+              </li>
+            </ol>
+
+            For example,
+            <code
+              >&lt;a href="https://www.google.com"&gt;Click here&lt;/a&gt;</code
+            >
+          </div>
+
+          <br />
+          <a href="https://www.google.com">Click here</a>
+
+          <p>
+            When a user clicks on a hyperlink, the browser sends an HTTP request
+            to the target URL. This request includes necessary information such
+            as the request type, headers, etc., and the browser waits for the
+            server's response.
+          </p>
+
           <h4>From a Browser's Perspective:</h4>
-          <p>When parsing an HTML document, the browser encounters an <code>&lt;a&gt;</code> tag and creates a clickable hyperlink based on the <code>href</code> attribute's value. When a user clicks on this hyperlink, the browser sends an HTTP request to the target URL specified in the <code>href</code> attribute. This request includes metadata like the Referer header, indicating the request's origin page.</p>
-          <p>After receiving the server's response, the browser processes it accordingly. If the response is an HTML page, the browser parses and renders the page. If the response is a file like an image or video, the browser handles it appropriately.</p>
-          <p>If the response is an HTML page that contains other hyperlinks, the browser repeats the above steps to load and render other parts of the page until the page is fully loaded.</p>
+          <p>
+            When parsing an HTML document, the browser encounters an
+            <code>&lt;a&gt;</code> tag and creates a clickable hyperlink based
+            on the <code>href</code> attribute's value. When a user clicks on
+            this hyperlink, the browser sends an HTTP request to the target URL
+            specified in the <code>href</code> attribute(OpenAI's ChatGPT,
+            private communication, 10 April 2024). This request includes
+            metadata like the Referer header, indicating the request's origin
+            page.
+          </p>
+          <p>
+            After receiving the server's response, the browser processes it
+            accordingly. If the response is an HTML page, the browser parses and
+            renders the page. If the response is a file like an image or video,
+            the browser handles it appropriately.
+          </p>
+          <p>
+            If the response is an HTML page that contains other hyperlinks, the
+            browser repeats the above steps to load and render other parts of
+            the page until the page is fully loaded.
+          </p>
 
           <p>For example, the following code creates a hyperlink to Google:</p>
           <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
@@ -59,7 +122,10 @@
             displays the Google homepage.
           </p>
 
-          <h3>Types of Links<sup><a href="#ref1">[1]</a></sup></h3>
+          <!-- Types of Links Section -->
+          <h3>
+            Types of Links<sup><a href="#ref1">[1]</a></sup>
+          </h3>
           <h4>Inline Links</h4>
           <p>
             Inline links display remote content without embedding it, allowing
@@ -70,35 +136,54 @@
             immediately needed.
           </p>
           <p>
-            Example: <a href="https://www.example.com">Click here</a> to visit
-            Example.com.
+            Example: <a href="https://www.google.com">Click here</a> to visit
+            google.com.
           </p>
 
           <h4>Anchor Links</h4>
           <p>
             Anchor links, also known as fragment links, are used to link to a
-            specific part of a document. 
-            <p>Example: <a href="#top">Back to Top</a></p>This can be a portion of text, a
-            heading, or even a hot area in an image. Anchors are marked with
-            identifiers, and a link to an anchor is called an anchor link. For
-            example, in HTML, you can create an anchor like this:
-            <code>&lt;a id="name"&gt;&lt;/a&gt;</code>. To link to this anchor,
-            you would use
-            <code>&lt;a href="#name"&gt;Link Text&lt;/a&gt;</code>.
+            specific part of a document.
           </p>
-          
+
+          <p>Example: <a href="#top">Back to Top</a></p>
+          This can be a portion of text, a heading, or even a hot area in an
+          image. Anchors are marked with identifiers, and a link to an anchor is
+          called an anchor link. For example, in HTML, you can create an anchor
+          like this: <code>&lt;a id="name"&gt;&lt;/a&gt;</code>. To link to this
+          anchor, you would use
+          <code>&lt;a href="#name"&gt;Link Text&lt;/a&gt;</code>.
+
           <ul>
             <li>
               <strong>Text hyperlink:</strong> Embedded into a word or a phrase.
+              For example, in the sentence "Visit our
+              <a href="https://en.wikipedia.org/wiki/Hyperlink">website</a> for
+              more information," the word "website" is a text hyperlink.
             </li>
-            <li><strong>Image hyperlink:</strong> Embedded into an image.</li>
+            <li>
+              <strong>Image hyperlink:</strong> Embedded into an image. For
+              example,
+              <a href="https://www.example.com"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGyoAZLiUZAsFbSM2GpGIMVzWhZajNind4ajoNLv6rQ&s"
+                  alt="Click here"
+                  id="hypelogo"
+              /></a>
+              creates an image hyperlink.
+            </li>
             <li>
               <strong>Bookmark hyperlink:</strong> Takes visitors to another
-              part of a web page.
+              part of a web page. For example,
+              <a href="#top">Jump to top</a> would take users to a section with
+              the id "section2" on the same page.
             </li>
             <li>
               <strong>E-mail hyperlink:</strong> Allows visitors to send an
-              e-mail message.
+              e-mail message. For example,
+              <a href="mailto:a1441573231@outlook.com">Email us</a> would open
+              the default email client to send an email to
+              "a1441573231@outlook.com".
             </li>
           </ul>
 
@@ -110,16 +195,18 @@
           </p>
           <p>
             Example:
-            <a href="https://www.example.com" title="Visit Example.com"
+            <a href="https://www.google.com" title="Visit google.com"
               >Example.com</a
             >
           </p>
 
+          <!-- Why Hyperlinks Are Important Section -->
           <h3>Why Hyperlinks Are Important</h3>
           <p>
             All the above mentioned links, complemented by quality content, are
-            important in improving a website’s SEO<sup><a href="#ref2">[2]</a></sup>, particularly when they’re
-            done organically or naturally.
+            important in improving a website’s SEO<sup
+              ><a href="#ref2">[2]</a></sup
+            >, particularly when they’re done organically or naturally.
           </p>
 
           <p>
@@ -144,7 +231,8 @@
           <p>
             When dealing with hyperlinks, it’s important to avoid artificial
             inbound links from spammy websites, as these can affect a website’s
-            scores<sup><a href="#ref3">[3]</a></sup>. Additionally, external links to your content should point to
+            scores<sup><a href="#ref3">[3]</a></sup
+            >. Additionally, external links to your content should point to
             high-quality and relevant sites to benefit both you and your
             readers. The number of links also plays a part in rankings. Having
             too many outbound links can put a website at risk of looking spammy.
@@ -152,19 +240,27 @@
 
           <p>
             Aside from improving SEO, links can increase a website’s traffic and
-            credibility<sup><a href="#ref4">[4]</a></sup>. This helps in building connections within a particular
-            web community, which then paves the way for link building. Links are
+            credibility<sup><a href="#ref4">[4]</a></sup
+            >. This helps in building connections within a particular web
+            community, which then paves the way for link building. Links are
             also useful when used in conjunction with calls to action, as these
             can increase conversion rates.
           </p>
-          <iframe
-            width="100%"
-            height="435"
-            src="https://www.youtube.com/embed/Yqwm3RFicQ8"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <h3>AJAX (Asynchronous JavaScript and XML)<sup><a href="#ref5">[5]</a></sup></h3>
+          <iframe src="https://www.youtube.com/embed/Yqwm3RFicQ8"></iframe>
+          <span class="memex-caption"
+            >How To Skyrocket Your SEO with This SIMPLE Link Building Process.
+            From:
+            <a href="https://www.youtube.com/watch?v=Yqwm3RFicQ8"
+              >https://www.youtube.com/watch?v=Yqwm3RFicQ8</a
+            >
+          </span>
+
+          <!-- Ajax Section -->
+          <h3>
+            AJAX (Asynchronous JavaScript and XML)<sup
+              ><a href="#ref5">[5]</a></sup
+            >
+          </h3>
           <p>
             AJAX is a technique used in web development to create interactive
             web applications. It allows web pages to be updated asynchronously
@@ -173,23 +269,71 @@
             entire page.
           </p>
 
-          <p>hyperlinks are used for navigation between different resources, AJAX is used to enhance the interactivity and responsiveness of web applications by allowing them to update content asynchronously.</p>
+          <p>
+            hyperlinks are used for navigation between different resources, AJAX
+            is used to enhance the interactivity and responsiveness of web
+            applications by allowing them to update content
+            asynchronously(OpenAI's ChatGPT, private communication, 11 April
+            2024).
+          </p>
+
+          <p>
+            This Ajax request example sets up a button that, when clicked,
+            fetches a random cat fact from an API and displays it on the page.
+          </p>
 
           <h4>Interactive Example</h4>
           <button id="load-data">Load Data from Public API</button>
           <div id="data-container"></div>
         </div>
 
-      
+        <p><button id="toggle-steps">Show Steps</button></p>
+        <div id="steps-container" class="steps-container" style="display: none">
+          <h4>Steps to Load Data from Public API</h4>
+          <ol>
+            <li>
+              <strong>User Interaction:</strong>The user clicks a button on a
+              webpage to load a random cat fact.
+            </li>
+            <li>
+              <strong>Request Initiation: </strong>When the button is clicked, a
+              request is sent from the webpage to a remote server using an API
+              (Application Programming Interface).
+            </li>
+            <li>
+              <strong>Server Interaction:</strong>The server receives the
+              request and processes it. In this case, the server retrieves a
+              random cat fact from a database.
+            </li>
+            <li>
+              <strong>Data Retrieval:</strong>The server sends back a response
+              containing the random cat fact to the webpage.
+            </li>
+            <li>
+              <strong>Response Handling: </strong>The webpage receives the
+              response and extracts the cat fact from it.
+            </li>
+            <li>
+              <strong>Display Update:</strong>The extracted cat fact is then
+              displayed on the webpage for the user to see.
+            </li>
+            <li>
+              <strong>Error Handling: </strong>If there is an issue with the
+              request (e.g., server not responding), an error message is
+              displayed instead of the cat fact.
+            </li>
+          </ol>
+        </div>
+        <!-- References Section -->
         <h3>References</h3>
         <ol>
           <li id="ref1">
             <a href="https://en.wikipedia.org/wiki/Hyperlink#cite_note-4"
               >Definition of Hyperlinks - Wikipedia</a
-            > . 27 March 2024
+            >
+            . 27 March 2024
           </li>
-          
-          </li>
+
           <li id="ref2">
             <a
               href="https://web.archive.org/web/20130704143743/http://people.duke.edu/~mshumate/fiction/htt/tools.html#fatlink"
@@ -198,163 +342,763 @@
             . Archived from the original on July 4, 2013.
           </li>
           <li id="ref3">
-            <a
-              href="https://www.w3.org/Provider/Server"
+            <a href="https://www.w3.org/Provider/Server"
               >Making a Server ("HREF" is for "hypertext reference")</a
             >
-            . W3C. Archived from the original on 2012-10-25. Retrieved 2012-10-25.
+            . W3C. Archived from the original on 2012-10-25. Retrieved
+            2012-10-25.
           </li>
           <li id="ref4">
             <a
               href="https://www.cnet.com/news/hyperlink-patent-case-fails-to-click/"
               >CNET News.com, Hyperlink patent case fails to click</a
-            >
-            . August 23, 2002.
+            >. August 23, 2002.
           </li>
           <li id="ref5">
             <a
               href="https://en.wikipedia.org/wiki/AJAX_(programming)#cite_note-:0-1"
               >AJAX (programming) - Wikipedia</a
-            > . 16 March 2024
+            >
+            . 16 March 2024
+          </li>
         </ol>
       </section>
 
+      <!--  Section2 -->
       <section id="section2" style="display: none">
         <h2>History of Hyperlinks</h2>
-        <p>Please click on the following years to obtain different information for each year</p>
-        <nav id="nav2">
-          <ul>
-              <li><button class="history-year" data-target="year-1945">1945</button></li>
-              <li><button class="history-year" data-target="year-1960s">1960s</button></li>
-              <li><button class="history-year" data-target="year-1970s">1970s</button></li>
-              <li><button class="history-year" data-target="year-1980s">1980s</button></li>
-              <li><button class="history-year" data-target="year-1989">1989</button></li>
-              <li><button class="history-year" data-target="year-1990">1990</button></li>
-              <li><button class="history-year" data-target="year-1991">1991</button></li>
-              <li><button class="history-year" data-target="year-1993">1993</button></li>
-              <li><button class="history-year" data-target="year-1994">1994</button></li>
-              <li><button class="history-year" data-target="year-late-1990s">Late 1990s</button></li>
-              <li><button class="history-year" data-target="year-2000s">2000s</button></li>
-              <li><button class="history-year" data-target="year-2010s">2010s</button></li>
-              <li><button class="history-year" data-target="year-present">Present</button></li>
+
+        <p>
+          Please click on the following years to obtain different information
+          for each year
+        </p>
+        <nav class="section2_nav">
+          <ul class="section2_nav_ul">
+            <li>
+              <button class="history-year" data-target="year-1945">1945</button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-1960s">
+                1960s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-1970s">
+                1970s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-1980s">
+                1980s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="Early-year-1990s">
+                Early 1990s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-late-1990s">
+                Late 1990s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-2000s">
+                2000s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-2010s">
+                2010s
+              </button>
+            </li>
+            <li>
+              <button class="history-year" data-target="year-present">
+                Present
+              </button>
+            </li>
           </ul>
-      </nav>
-      <div class="container">
-        <section id="year-1945" class="history-content">
-          <p>1945: Vannevar Bush proposed the concept of a hypothetical machine called the "memex" in his influential essay "<a
-            href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
-            >As We May Think</a
-          ><sup><a href="#ref6">[1]</a></sup>," published in The Atlantic Monthly. The memex, short for "memory extender," was envisioned as a mechanical device that would augment human memory and facilitate the organization and retrieval of information.</p><p>
-            <img id="memex-image" src="https://cdn.theatlantic.com/thumbor/bZX1oW71zQgJwzuSKMaGQSW7_w8=/1x416:2999x2102/976x549/media/img/2018/03/AP_413517775098/original.jpg" alt="Vannevar Bush's Memex Concept Image">
-            <span id="memex-caption">The telegram was a breakthrough in communication technology, which Vannevar Bush imagined could evolve in unprecedented ways. (Associated Press)</span>
-          </p>
+        </nav>
+        <div class="container">
+          <section id="year-1945" class="history-content">
+            <h3>
+              Vannevar Bush and the Memex: A Vision of Information Augmentation
+            </h3>
+            <p>
+              Vannevar Bush proposed the concept of a hypothetical machine
+              called the "memex" in his influential essay "<a
+                href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
+                >As We May Think</a
+              ><sup><a href="#ref6">[1]</a></sup
+              >," published in The Atlantic Monthly. The memex, short for
+              "memory extender," was envisioned as a mechanical device that
+              would augment human memory and facilitate the organization and
+              retrieval of information.
+            </p>
 
+            <p>
+              <img
+                class="memex-image"
+                src="https://cdn.theatlantic.com/thumbor/bZX1oW71zQgJwzuSKMaGQSW7_w8=/1x416:2999x2102/976x549/media/img/2018/03/AP_413517775098/original.jpg"
+                alt="Vannevar Bush's Memex Concept Image"
+              />
+              <span class="memex-caption"
+                >The telegram was a breakthrough in communication technology,
+                which Vannevar Bush imagined could evolve in unprecedented ways.
+                (Associated Press). From:
+                <a href="https://en.wikipedia.org/wiki/Memex"
+                  >https://en.wikipedia.org/wiki/Memex</a
+                ></span
+              >
+            </p>
 
-          <p>Bush's idea was groundbreaking for its time, as it predated the development of modern computers and the internet. The memex was conceived as a desk-like device with screens for reading microfilm, buttons for navigation, and a keyboard for entering annotations. Users would be able to create, store, and access a personal library of documents and information, similar to the way we use computers today.</p>
-          <p>One of the key features of the memex was its ability to create links, or "associative trails," between different documents. These links would allow users to navigate between related pieces of information, forming a non-linear network of knowledge. This concept foreshadowed the hypertext and hyperlinks that would later become central to the World Wide Web.</p>
-      </section>
-      
-      <section id="year-1960s" class="history-content">
-          <p>1960s: Ted Nelson made significant contributions to the field of computing by introducing the terms "hypertext" and "hyperlink." He envisioned a revolutionary concept of non-sequential writing, where information could be interconnected in a web-like structure. This groundbreaking idea laid the foundation for modern hypertext systems and the World Wide Web.</p>
-          <p>Nelson's vision culminated in the proposal of the <a href="https://www.xanadu.net/">Xanadu project</a>, an ambitious endeavor aimed at creating a global hypertext system<sup><a href="#ref7">[2]</a></sup>. The Xanadu project sought to enable users to access and navigate a vast network of interconnected documents, allowing for seamless information retrieval and sharing.</p>
-          <p>Although the Xanadu project faced numerous challenges and was never fully realized in its original form, Nelson's ideas and contributions were instrumental in shaping the development of hypertext and hypermedia systems. His work laid the groundwork for future innovations in information technology and inspired generations of researchers and developers to explore the possibilities of interconnected digital information.</p>
-      </section>
-      
-      <section id="year-1970s" class="history-content">
-          <p>1970s: The Hypertext Editing System (HES) is developed by Andries van Dam and his colleagues at Brown University.</p>
-          <p>HES allows users to create and edit hypertext documents, laying the foundation for future hypertext systems.</p>
-      </section>
-      
-      <section id="year-1980s" class="history-content">
-          <p>1980s: Tim Berners-Lee works at CERN and develops ENQUIRE, a system for storing and sharing information. This project later inspires the creation of the World Wide Web.</p>
-      </section>
-      
-      <section id="year-1989" class="history-content">
-          <p>1989: Tim Berners-Lee writes a proposal for the World Wide Web, outlining the basic concepts of hypertext and the HTTP protocol. He also creates the first web browser and web server.</p>
-      </section>
-      
-      <section id="year-1990" class="history-content">
-          <p>1990: The first web page is created by Tim Berners-Lee, providing an introduction to the World Wide Web and instructions on how to create web pages.</p>
-      </section>
-      
-      <section id="year-1991" class="history-content">
-          <p>1991: The first website goes live at CERN, providing information about the World Wide Web project and how to use it.</p>
-      </section>
-      
-      <section id="year-1993" class="history-content">
-          <p>1993: The Mosaic web browser is released, making the World Wide Web accessible to a wider audience. Mosaic introduces features such as inline images and the ability to display text and images on the same page.</p>
-      </section>
-      
-      <section id="year-1994" class="history-content">
-          <p>1994: The World Wide Web Consortium (W3C) is founded by Tim Berners-Lee to standardize web technologies and ensure their interoperability.</p>
-      </section>
-      
-      <section id="year-late-1990s" class="history-content">
-          <p>Late 1990s: The dot-com boom sees a rapid increase in the number of websites and internet users, leading to the popularization of hyperlinks as a means of navigating the web.</p>
-      </section>
-      
-      <section id="year-2000s" class="history-content">
-          <p>2000s: Web 2.0 emerges, bringing a new wave of interactive and collaborative web applications. Social media platforms like Facebook and Twitter use hyperlinks extensively to connect users and share information.</p>
-      </section>
-      
-      <section id="year-2010s" class="history-content">
-          <p>2010s: The rise of mobile internet and smartphones leads to a shift towards mobile-friendly web design, with hyperlinks remaining a crucial element of navigation on mobile devices.</p>
-      </section>
-      
-      <section id="year-present" class="history-content">
-          <p>Present: Hyperlinks continue to be a fundamental feature of the web, enabling users to navigate between different resources and access information quickly and efficiently. Advances in web technologies have led to the development of new types of hyperlinks, such as deep links and app links, further enhancing the user experience.</p>
-      </section>
+            <p>
+              Bush's idea was groundbreaking for its time, as it predated the
+              development of modern computers and the internet. The memex was
+              conceived as a desk-like device with screens for reading
+              microfilm, buttons for navigation, and a keyboard for entering
+              annotations. Users would be able to create, store, and access a
+              personal library of documents and information, similar to the way
+              we use computers today.
+            </p>
+            <p>
+              One of the key features of the memex was its ability to create
+              links, or "associative trails," between different documents. These
+              links would allow users to navigate between related pieces of
+              information, forming a non-linear network of knowledge. This
+              concept foreshadowed the hypertext and hyperlinks that would later
+              become central to the World Wide Web.
+            </p>
+          </section>
 
-      <h3>References</h3>
-        <ol>
-          <li id="ref6">
-            Barnet, Belinda (2013). Memory Machines: The Evolution of Hypertext. Anthem Press. ISBN 9780857281968.
-          </li>
-          
-          </li>
-          <li id="ref7">
-            <a
-              href="https://www.cambridge.org/core/books/abs/memory-machines/magical-place-of-literary-memory-xanadu/EF94C6EA2C3B9B7FB7B5002F220D2CCA"
-              >The Magical Place of Literary Memory: Xanadu</a
-            >
-            . Archived October 9, 2004, at archive.today in Screening the Past Archived January 16, 2013, at the Wayback Machine, July 2005 by Belinda Barnet
-          </li>
-          <li id="ref8">
-            <a
-              href="https://www.w3.org/Provider/Server"
-              >Making a Server ("HREF" is for "hypertext reference")</a
-            >
-            . W3C. Archived from the original on 2012-10-25. Retrieved 2012-10-25.
-          </li>
-          <li id="ref9">
-            <a
-              href="https://www.cnet.com/news/hyperlink-patent-case-fails-to-click/"
-              >CNET News.com, Hyperlink patent case fails to click</a
-            >
-            . August 23, 2002.
-          </li>
-          <li id="ref10">
-            <a
-              href="https://en.wikipedia.org/wiki/AJAX_(programming)#cite_note-:0-1"
-              >AJAX (programming) - Wikipedia</a
-            > . 16 March 2024
-        </ol>
-      
-    </div>
+          <section id="year-1960s" class="history-content">
+            <h3>
+              Ted Nelson and the Vision of Hypertext: Pioneering Non-Sequential
+              Information Structures
+            </h3>
+            <p>
+              Ted Nelson made significant contributions to the field of
+              computing by introducing the terms "hypertext" and "hyperlink." He
+              envisioned a revolutionary concept of non-sequential writing,
+              where information could be interconnected in a web-like structure.
+              This groundbreaking idea laid the foundation for modern hypertext
+              systems and the World Wide Web.
+            </p>
+            <p>
+              Nelson's vision culminated in the proposal of the
+              <a href="https://www.xanadu.net/">Xanadu project</a>, an ambitious
+              endeavor aimed at creating a global hypertext system<sup
+                ><a href="#ref7">[2]</a></sup
+              >. The Xanadu project sought to enable users to access and
+              navigate a vast network of interconnected documents, allowing for
+              seamless information retrieval and sharing.
+            </p>
+            <p>
+              Although the Xanadu project faced numerous challenges and was
+              never fully realized in its original form, Nelson's ideas and
+              contributions were instrumental in shaping the development of
+              hypertext and hypermedia systems. His work laid the groundwork for
+              future innovations in information technology and inspired
+              generations of researchers and developers to explore the
+              possibilities of interconnected digital information.
+            </p>
+          </section>
+
+          <section id="year-1970s" class="history-content">
+            <h3>
+              Andries van Dam and the Hypertext Editing System: Pioneering
+              Interactive Digital Documents
+            </h3>
+            <p>
+              Andries van Dam and his colleagues at Brown University developed
+              the Hypertext Editing System (HES)<sup
+                ><a href="#ref8">[3]</a></sup
+              >, a pioneering software that revolutionized the way people
+              interacted with digital documents. HES allowed users to create and
+              edit hypertext documents, which are documents containing links to
+              other documents, images, or multimedia content. This innovative
+              system laid the foundation for future hypertext systems and played
+              a crucial role in shaping the evolution of digital communication.
+            </p>
+            <p>
+              <img
+                class="memex-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/HypertextEditingSystemConsoleBrownUniv1969.jpg/220px-HypertextEditingSystemConsoleBrownUniv1969.jpg"
+                alt="Hypertext Editing System"
+              />
+              <span class="memex-caption"
+                >Hypertext Editing System (HES) IBM 2250 display console, with
+                lightpen – Chris Braun, Brown University, 1969. From:
+                <a href="https://en.wikipedia.org/wiki/Memex"
+                  >https://en.wikipedia.org/wiki/Memex</a
+                ></span
+              >
+            </p>
+            <p>
+              HES introduced several groundbreaking concepts that are now
+              fundamental to modern computing. It provided users with the
+              ability to navigate through documents in a non-linear manner,
+              jumping from one section to another using hyperlinks. This
+              approach to document organization was a significant departure from
+              traditional linear text, offering users a more flexible and
+              dynamic way to access information.
+            </p>
+            <p>
+              Furthermore, HES pioneered the concept of interactive multimedia
+              documents, allowing users to integrate text, images, and other
+              media types into a single cohesive document. This approach laid
+              the groundwork for the development of modern multimedia
+              technologies and paved the way for the creation of rich,
+              interactive digital content.
+            </p>
+          </section>
+
+          <section id="year-1980s" class="history-content">
+            <h3>Tim Berners-Lee and the Birth of the World Wide Web</h3>
+            <p>
+              <img
+                class="memex-image"
+                src="https://cds.cern.ch/images/CERN-GE-9407011-31/file?size=large"
+                alt="Tim Berners-Lee"
+              />
+              <span class="memex-caption"
+                >Tim Berners-Lee, pictured at CERN (Image: CERN). From:<a
+                  href="https://webfoundation.org/about/vision/history-of-the-web/"
+                  >https://webfoundation.org/about/vision/history-of-the-web/</a
+                ></span
+              >
+            </p>
+            <p>
+              Tim Berners-Lee worked as a software engineer at CERN, the
+              European Organization for Nuclear Research, where he developed a
+              project called ENQUIRE. ENQUIRE was a simple, decentralized system
+              for storing and sharing information among researchers at CERN. It
+              allowed users to create and link documents together, forming a
+              rudimentary hypertext system.
+            </p>
+            <p>
+              The development of ENQUIRE marked an important step in the
+              evolution of hypertext and laid the foundation for Berners-Lee's
+              later work on the World Wide Web. While ENQUIRE was a relatively
+              modest project, it planted the seed for the idea of a global
+              hypertext system that would eventually become the World Wide Web.
+            </p>
+            <p>
+              Berners-Lee's experience with ENQUIRE highlighted the potential of
+              hypertext as a means of organizing and accessing information. It
+              inspired him to propose a more ambitious project that would allow
+              people around the world to share information over the internet
+              using hypertext links. This vision laid the groundwork for the
+              development of the World Wide Web, which Berners-Lee would later
+              create in the early 1990s.
+            </p>
+          </section>
+
+          <section id="Early-year-1990s" class="history-content">
+            <h3>Milestones in the Development of the World Wide Web</h3>
+            <p>
+              1990: Tim Berners-Lee, a British computer scientist, creates the
+              first web page while working at CERN, the European Organization
+              for Nuclear Research. This web page serves as an introduction to
+              the World Wide Web and provides basic information on how to create
+              web pages. Berners-Lee's invention of the World Wide Web
+              revolutionizes the way information is shared and accessed, laying
+              the foundation for the modern internet.
+            </p>
+            <p>
+              1991: The first website goes live at CERN. This website, hosted on
+              Berners-Lee's NeXT computer, provides information about the World
+              Wide Web project and serves as a guide on how to use the web. It
+              includes explanations of hypertext, URLs, and browsers, helping
+              users navigate this new digital landscape.
+            </p>
+            <p>
+              1993: The Mosaic web browser is released by the National Center
+              for Supercomputing Applications (NCSA) at the University of
+              Illinois Urbana-Champaign<sup><a href="#ref9">[4]</a></sup
+              >. Mosaic is the first web browser to display text and images
+              together on the same page, making the World Wide Web accessible to
+              a wider audience. This graphical web browser plays a crucial role
+              in popularizing the web and is a precursor to modern browsers like
+              Firefox, Chrome, and Safari.
+            </p>
+            <p>
+              <img
+                class="memex-image"
+                src="https://media.wired.com/photos/59344b215321273fc0f91cd1/master/w_1280,c_limit/mos-10.jpg"
+                alt="NCSA"
+              />
+              <span class="memex-caption"
+                >NCSA Mosaic 1.2 for Unix. From:<a
+                  href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"
+                  >https://en.wikipedia.org/wiki/Mosaic_(web_browser)</a
+                ></span
+              >
+            </p>
+            <p>
+              1994: Tim Berners-Lee founds the World Wide Web Consortium (W3C)
+              <img
+                id="w3c-logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkbsC3rbsWBANRNVyfxJzL6cWXjZzphvYoeA&s"
+                alt="W3C Logo"
+              />at the Massachusetts Institute of Technology (MIT). The W3C is
+              an international community that develops open standards to ensure
+              the long-term growth of the web. The consortium focuses on
+              standardizing web technologies such as HTML, CSS, and JavaScript,
+              ensuring that web pages are accessible and consistent across
+              different platforms and devices. The W3C's efforts have been
+              instrumental in shaping the modern web and promoting its
+              interoperability.
+            </p>
+          </section>
+
+          <section id="year-late-1990s" class="history-content">
+            <h3>The Dot-Com Boom: Shaping the Modern Internet Landscape</h3>
+            <p>
+              The late 1990s witnessed the dot-com boom<sup
+                ><a href="#ref10">[5]</a></sup
+              >, a period of rapid growth in the use of the internet for
+              commercial purposes. This era saw a surge in the number of
+              websites and internet users, fueled by the emergence of e-commerce
+              and online businesses. As more people began to access the web, the
+              use of hyperlinks became increasingly popular as a means of
+              navigating between different web pages. Hyperlinks, also known as
+              links, are elements in a web page that allow users to click and
+              navigate to another page or resource on the internet. The dot-com
+              boom played a significant role in shaping the modern internet
+              landscape, laying the foundation for many of the online services
+              and technologies that we rely on today.
+            </p>
+            <button onclick="toggleMoreInfo()">Show more information</button>
+            <!-- More information -->
+            <p id="moreInfo1" style="display: none">
+              In the late 1990s, low interest rates led to an increase in
+              start-up companies, many of which lacked realistic plans and
+              administrative ability but were able to attract investors due to
+              the novelty of the dot-com concept. However, in 2000, the dot-com
+              bubble burst, causing many start-ups to fail. Despite this, online
+              retailers like eBay and Amazon thrived, while traditional media
+              outlets found the web to be a profitable distribution channel for
+              content and advertising.
+            </p>
+            <p id="moreInfo2" style="display: none">
+              Telecommunications companies faced overcapacity as many internet
+              business clients went bust. This, along with investment in local
+              cell infrastructure, kept connectivity charges low, making
+              high-speed internet more affordable. Some companies, like airline
+              booking sites, Google, eBay, and Amazon, developed successful
+              business models, making the web a more compelling experience.
+            </p>
+            <p id="moreInfo3" style="display: none">
+              However, many entrepreneurs lacked experience and did not manage
+              capital influx prudently. Additionally, many dot-com business
+              plans assumed they could bypass existing distribution channels,
+              but when established businesses developed their own internet
+              presence, newcomers struggled to compete.
+            </p>
+            <p id="moreInfo4" style="display: none">
+              The dot-com bubble burst in March 2000, with the NASDAQ Composite
+              index peaking at over double its value just a year before. Despite
+              the bubble's deflation, the internet continued to grow, driven by
+              commerce, online information, social networking, and mobile device
+              access.
+            </p>
+
+            <p>
+              <iframe src="https://www.youtube.com/embed/FTvfshr4tMw"></iframe>
+              <span class="memex-caption"
+                >The Dot-Com Chancers Who Burst The Bubble. From:<a
+                  href="https://www.youtube.com/watch?v=FTvfshr4tMw"
+                  >https://www.youtube.com/watch?v=FTvfshr4tMw</a
+                >
+              </span>
+            </p>
+            <p></p>
+          </section>
+
+          <section id="year-2000s" class="history-content">
+            <h3>
+              The Rise of Web 2.0: Transforming the Internet into a
+              Collaborative Platform
+            </h3>
+            <p>
+              Web 2.0 emerges, bringing a new wave of interactive and
+              collaborative web applications. Social media platforms like
+              Facebook and Twitter use hyperlinks extensively to connect users
+              and share information. Web 2.0 is characterized by the shift from
+              static web pages to dynamic and user-generated content. This era
+              sees the rise of blogs, wikis, and social networking sites, which
+              rely heavily on hyperlinks for navigation and content sharing.
+              Users can now easily create, share, and interact with content,
+              leading to a more interconnected and participatory web experience.
+              Web 2.0 also introduces concepts such as user-generated content,
+              social sharing, and collaboration, which are now integral parts of
+              the modern internet landscape.
+            </p>
+            <button onclick="toggleMoreInfo2()">
+              Show more information about web2.0
+            </button>
+            <!-- More information -->
+            <p id="moreInfo5" style="display: none">
+              Web 2.0, a term coined by Darcy DiNucci in 1999, envisioned the
+              future of the web as a more interactive and interconnected
+              platform. She described it as a transport mechanism for
+              interactivity, extending beyond traditional browsers to devices
+              like TVs, car dashboards, cell phones, and even microwave ovens.
+              This vision foresaw a web where users could access information and
+              engage with content across various devices seamlessly.
+            </p>
+            <p id="moreInfo6" style="display: none">
+              The term "Web 2.0" gained traction in 2002 as companies like
+              Amazon, Facebook, Twitter, and Google revolutionized online
+              interactions and transactions. Web 2.0 introduced multimedia
+              content and interactive web applications, enhancing user
+              experiences. John Battelle and Tim O'Reilly further popularized
+              the concept in 2004, emphasizing the "Web as Platform" model,
+              where users contribute to content creation, driving business
+              value.
+            </p>
+            <p id="moreInfo7" style="display: none">
+              Web 2.0 represented a shift from the static, one-way communication
+              of "Web 1.0" to a more collaborative, user-driven web environment.
+              Services like Google leveraged user-generated content to improve
+              search algorithms, while Wikipedia demonstrated the power of
+              community-driven knowledge sharing.
+            </p>
+            <p>
+              <iframe src="https://www.youtube.com/embed/7BAXvFdMBWw"></iframe>
+              <span class="memex-caption"
+                >Explaining Web2.0. From:<a
+                  href="https://www.youtube.com/watch?v=7BAXvFdMBWw"
+                  >https://www.youtube.com/watch?v=7BAXvFdMBWw</a
+                ></span
+              >
+            </p>
+            <p></p>
+          </section>
+
+          <section id="year-2010s" class="history-content">
+            <h3>The Mobile Revolution: Hyperlinks in the Age of Smartphones</h3>
+            <p>
+              The 2010s witnessed a dramatic shift in internet usage patterns
+              with the widespread adoption of smartphones and the rise of mobile
+              internet. This shift necessitated a change in web design practices
+              to accommodate smaller screens and touch-based interactions,
+              leading to the emergence of mobile-friendly web design principles.
+            </p>
+            <p>
+              Hyperlinks remained a crucial element of navigation on mobile
+              devices, allowing users to easily navigate between different web
+              pages and access relevant information. However, the design and
+              placement of hyperlinks became more critical in mobile web design
+              to ensure a seamless and intuitive user experience.
+            </p>
+            <p>
+              Responsive design became a standard practice, ensuring that
+              websites adapt to different screen sizes and orientations,
+              including those of smartphones and tablets. This approach not only
+              made websites more accessible on mobile devices but also improved
+              overall usability and user satisfaction.
+            </p>
+            <p>
+              Additionally, the 2010s saw the rapid growth of mobile apps, which
+              offered a more tailored and immersive experience compared to
+              mobile websites. However, hyperlinks continued to play a vital
+              role in app navigation, allowing users to move between different
+              sections of the app or open external links(OpenAI's ChatGPT,
+              private communication, 12 April 2024).
+            </p>
+          </section>
+
+          <section id="year-present" class="history-content">
+            <h3>The Evolution of Hyperlinks: Navigating the Web of Tomorrow</h3>
+            <p>
+              In the present day, hyperlinks remain a fundamental feature of the
+              web, serving as bridges that connect various resources and enable
+              users to navigate the vast expanse of information available
+              online. Whether in the form of text, images, or buttons,
+              hyperlinks play a crucial role in facilitating seamless navigation
+              and access to content.
+            </p>
+            <p>
+              With the continuous advancement of web technologies, new types of
+              hyperlinks have emerged to enhance the user experience. Deep
+              links, for example, allow users to navigate directly to specific
+              content within a website or app, bypassing the homepage or main
+              navigation. This enables users to access relevant information more
+              quickly and efficiently, improving overall usability.
+            </p>
+            <p>
+              App links are another innovation that has transformed the way
+              users interact with content on the web. App links allow websites
+              to link directly to specific content within a mobile app,
+              prompting users to open the app if it's installed or download it
+              if it's not. This seamless integration between websites and apps
+              provides a more cohesive user experience and encourages engagement
+              with mobile apps.
+            </p>
+            <p>
+              In addition to these advancements, hyperlinks continue to evolve
+              in response to changing user behaviors and technological
+              developments. For example, with the increasing popularity of voice
+              assistants and smart speakers, hyperlinks are being adapted to
+              work with voice commands, enabling users to navigate the web
+              hands-free.
+            </p>
+            <p>
+              Overall, hyperlinks remain a cornerstone of the web, enabling
+              users to explore, discover, and interact with content in
+              meaningful ways. As web technologies continue to evolve,
+              hyperlinks will likely continue to adapt and innovate, playing a
+              central role in shaping the future of the web(OpenAI's ChatGPT,
+              private communication, 12 April 2024).
+            </p>
+          </section>
+          <!--  References Section -->
+          <h3>References</h3>
+          <ol>
+            <li id="ref6">
+              Barnet, Belinda (2013). Memory Machines: The Evolution of
+              Hypertext. Anthem Press. ISBN 9780857281968.
+            </li>
+
+            <li id="ref7">
+              <a
+                href="https://www.cambridge.org/core/books/abs/memory-machines/magical-place-of-literary-memory-xanadu/EF94C6EA2C3B9B7FB7B5002F220D2CCA"
+                >The Magical Place of Literary Memory: Xanadu</a
+              >
+              . Archived October 9, 2004, at archive.today in Screening the Past
+              Archived January 16, 2013, at the Wayback Machine, July 2005 by
+              Belinda Barnet
+            </li>
+            <li id="ref8">
+              Brown University Department of Computer Science.(23 May 2019).
+              <a href="https://cs.brown.edu/events/halfcenturyofhypertext/"
+                >A Half-Century of Hypertext at Brown</a
+              >
+            </li>
+            <li id="ref9">
+              <a
+                href="https://web.archive.org/web/20140818071607/http://www.ncsa.illinois.edu/enabling/mosaic"
+              >
+                "NCSA Mosaic"</a
+              >
+              . NCSA. National Center for Supercomputing Applications. Archived
+              from the original on 18 August 2014. Retrieved 28 September 2020.
+            </li>
+            <li id="ref10">
+              The Dotcom Bubble Burst (2000) (internationalbanker.com)
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section id="section3" style="display: none">
+        <!--  Section3 -->
         <h2>Biography</h2>
-        <div id="bio-content">
-          <p>Brief biography of the author...</p>
-          <img src="author.jpg" alt="Author's Picture" />
-          <p>Name: John Doe</p>
-          <p>Education: Bachelor's in Computer Science</p>
-          <p>Experience: 5 years in web development</p>
-          <p>Interests: Web technologies, programming, hiking</p>
+        <!-- personal summary Section -->
+        <div class="expandable-section">
+          <div class="section-title">Personal Summary</div>
+          <div class="expanded-content">
+            <img id="cv_pic" src="IMG_6120.JPG" alt="Author's Picture" />
+            <p><strong>Name:</strong> Jiaheng Gu</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:23925667@student.uwa.edu.au"
+                >23925667@student.uwa.edu.au</a
+              >
+            </p>
+            <p><strong>Phone:</strong> 0490846537</p>
+            <p>
+              A highly motivated IT graduate with a master's degree and a
+              passion for technology. Possessing a solid foundation in IT
+              concepts and methodologies, backed by practical experience gained
+              through internships, projects, and volunteer work. Continuously
+              expanding knowledge through self-study on platforms like Udemy,
+              eager to apply new skills to real-world projects. Seeking work
+              opportunities to contribute to innovative IT initiatives and
+              further professional development in a dynamic environment.
+            </p>
+          </div>
         </div>
+
+        <!-- Education Section -->
+        <div class="expandable-section">
+          <div class="section-title">Education</div>
+          <div class="expanded-content">
+            <strong>The University of Western Australia</strong>
+            <a href="https://www.uwa.edu.au/" target="_blank">
+              <img
+                id="uwa"
+                src="https://coursera-university-assets.s3.amazonaws.com/fa/e5fc20724e11e5bf36bff635f1f3bb/UWA-Full-Ver-CMYK3.png"
+                alt="uwa-pic"
+              />
+            </a>
+            <p>Master of Information Technology</p>
+            <ul>
+              <li><strong>WAM:</strong> 76.4/100</li>
+              <li>
+                <strong>Selected awards:</strong> UWA Global Excellence
+                Scholarship (2023,2024)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="expandable-section">
+          <div class="section-title">Work Experience</div>
+          <div class="expanded-content">
+            <strong>Department of Health (WA Health)</strong>
+            <a href="https://www.health.wa.gov.au/" target="_blank">
+              <img
+                id="health"
+                src="https://www.health.wa.gov.au/~/media/Images/Corporate/Logo-Banner/logoDOH.gif"
+                alt="health"
+              />
+            </a>
+            <p>Cyber Security Intern(Feb 2024 - Present)</p>
+            <ul>
+              <li>
+                Assisted in deploying NGFW (Next-Generation Firewall) to enhance
+                network security.
+              </li>
+              <li>
+                Utilizing Python to analyze and visualize cybersecurity risk
+                assessment reports, including those from corporations such as EY
+                and OAG.
+              </li>
+              <li>
+                Enhanced cybersecurity awareness and education by optimizing the
+                Health Department's E-learning platform and creating informative
+                posters for hospital-wide dissemination.
+              </li>
+            </ul>
+            <strong>Worthy Cause</strong>
+            <a href="https://worthycause.org.au/" target="_blank">
+              <img
+                id="worthy"
+                src="https://worthycause.org.au/cdn/shop/files/Logo_banner_large_no_background.webp?height=628&pad_color=ffffff&v=1690763111&width=1200"
+                alt="worthy"
+              />
+            </a>
+            <p>Web Developer(Feb 2024 - Present)</p>
+            <ul>
+              <li>
+                Utilized Liquid, HTML, CSS, and JavaScript to optimize Worthy
+                Cause's Shopify platform.
+              </li>
+              <li>
+                Provided constructive suggestions for optimizing the website to
+                improve user experience and drive engagement.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Volunteer Experience Section -->
+        <div class="expandable-section">
+          <div class="section-title">Volunteer Experience</div>
+          <div class="expanded-content">
+            <strong>The University of Western Australia</strong>
+            <a href="https://www.uwa.edu.au/" target="_blank">
+              <img
+                id="uwa2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSrBMoPV8NjVe6qjJBbnJZUesls4r93PDd0qUtPYydg&s"
+                alt="uwa2"
+              />
+            </a>
+            <p>International Student Ambassador</p>
+            <ul>
+              <li>
+                Provided guidance and support to new international students,
+                assisting with their transition to university life.
+              </li>
+              <li>
+                Conducted campus tours and orientation activities to familiarize
+                students with campus facilities and resources.
+              </li>
+            </ul>
+            <strong>Cancer Council</strong>
+            <a
+              href="https://cancerwa.asn.au/?gad_source=1&gclid=CjwKCAjwt-OwBhBnEiwAgwzrUpny_BZ4VEspuCcvWU9fje4V1REDDeY2A5IkkDW7E3uRgeSvSM56oRoCGGEQAvD_BwE"
+              target="_blank"
+            >
+              <img
+                id="cancer"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfB5v5uPBsUxnZNIN3K_b3imt-RRFJ2J4rm-9J-060FQ&s"
+                alt="cancer"
+              />
+            </a>
+            <p>Volunteer, HBF run for a reason</p>
+            <ul>
+              <li>Assist with setting up and packing down.</li>
+              <li>
+                Assist injured participants and direct them to Medical
+                Personnel.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="expandable-section">
+          <div class="section-title">Interests</div>
+          <div class="expanded-content">
+            <div class="interests-container">
+              <div class="interest">
+                <img
+                  src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?height=640&width=640&fit=bounds"
+                  alt="Coding"
+                />
+                <p>Coding</p>
+              </div>
+              <div class="interest">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0jgUDGsuqthfzXJzCWQtQjP5BRzZljqUyedOA4NWiA&s"
+                  alt="Hiking"
+                />
+                <p>Hiking</p>
+              </div>
+              <div class="interest">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIFh56oDrKPh10aFV1SSCAO2nnU3aMStcrEm06GAL0w&s"
+                  alt="Basketball"
+                />
+                <p>Basketball</p>
+              </div>
+              <div class="interest">
+                <img
+                  src="https://static.wikia.nocookie.net/61928deb-8f7a-4d8d-8eba-999e51fd2095/smart/width/386/height/259"
+                  alt="Video Games"
+                />
+                <p>Video games</p>
+              </div>
+              <div class="interest">
+                <img
+                  src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/tdslyl0pptzs6vst4uq5"
+                  alt="Badminton"
+                />
+                <p>Badminton</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>References</h3>
+        <p>
+          The content partially references research papers, ChatGPT as indicated
+          in the text. The study of AJAX code is derived from W3Schools, and the
+          transition effect for CSS background colors is learned from ChatGPT.
+        </p>
+        <p>
+          Finally, I would like to express my gratitude to my teacher for their
+          guidance and support throughout this project. I would also like to
+          thank them for providing the course materials, which have been
+          instrumental in my learning.
+        </p>
       </section>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
